@@ -1,0 +1,61 @@
+<svg width="1400" height="800" viewBox="0 0 1400 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="60" x2="1300" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6FBFF"/>
+      <stop offset="1" stop-color="#EEF3FF"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="280" y1="140" x2="1040" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D473F"/>
+      <stop offset="1" stop-color="#1B7A6E"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="200" y1="130" x2="980" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFF8E7"/>
+      <stop offset="1" stop-color="#7CDEC0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="800" rx="36" fill="url(#bg)"/>
+  <g opacity="0.7">
+    <circle cx="1200" cy="160" r="150" fill="#DFF5EC"/>
+    <circle cx="210" cy="660" r="180" fill="#E8EDFF"/>
+  </g>
+  <rect x="120" y="120" width="1160" height="560" rx="32" fill="white" fill-opacity="0.86" stroke="#E8ECF8"/>
+  <rect x="165" y="168" width="510" height="54" rx="18" fill="#F2F6FF"/>
+  <circle cx="203" cy="195" r="12" fill="#0D473F"/>
+  <rect x="230" y="185" width="150" height="20" rx="10" fill="#DDE8FF"/>
+  <rect x="395" y="185" width="120" height="20" rx="10" fill="#E5F6F0"/>
+  <rect x="530" y="185" width="110" height="20" rx="10" fill="#F5F3FF"/>
+
+  <g>
+    <rect x="165" y="260" width="470" height="270" rx="26" fill="url(#teal)"/>
+    <circle cx="260" cy="360" r="18" fill="#8CD8C8"/>
+    <circle cx="520" cy="360" r="18" fill="#8CD8C8"/>
+    <path d="M260 360C350 310 390 310 470 355C500 375 515 393 520 360" stroke="#B2F1E5" stroke-width="6" stroke-linecap="round"/>
+    <rect x="210" y="400" width="200" height="22" rx="11" fill="#D8F5EE" fill-opacity="0.9"/>
+    <rect x="210" y="440" width="260" height="18" rx="9" fill="#D8F5EE" fill-opacity="0.7"/>
+    <rect x="210" y="472" width="150" height="18" rx="9" fill="#D8F5EE" fill-opacity="0.5"/>
+  </g>
+
+  <g>
+    <rect x="710" y="240" width="470" height="220" rx="24" fill="#F7F9FF" stroke="#E5EBFF"/>
+    <rect x="745" y="278" width="168" height="16" rx="8" fill="#DCE7FF"/>
+    <rect x="745" y="312" width="240" height="18" rx="9" fill="#EAF2FF"/>
+    <rect x="745" y="345" width="260" height="14" rx="7" fill="#EAF2FF"/>
+    <rect x="745" y="384" width="200" height="44" rx="18" fill="#0D473F"/>
+    <rect x="960" y="272" width="180" height="180" rx="18" fill="url(#mint)"/>
+    <path d="M1015 390L1042 350L1088 392" stroke="#0D473F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1015" cy="390" r="7" fill="#0D473F"/>
+    <circle cx="1042" cy="350" r="7" fill="#0D473F"/>
+    <circle cx="1088" cy="392" r="7" fill="#0D473F"/>
+  </g>
+
+  <g>
+    <rect x="710" y="500" width="470" height="120" rx="20" fill="#F4F8FF" stroke="#E5EBFF"/>
+    <rect x="742" y="532" width="160" height="16" rx="8" fill="#D6F7EA"/>
+    <rect x="930" y="532" width="112" height="16" rx="8" fill="#DCE7FF"/>
+    <rect x="742" y="566" width="240" height="18" rx="9" fill="#EAF2FF"/>
+    <rect x="1020" y="556" width="120" height="32" rx="16" fill="#0D473F"/>
+  </g>
+
+  <text x="170" y="690" fill="#0D473F" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="700">HOPR</text>
+  <text x="360" y="690" fill="#4B5D73" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">Calm urban transit for daily professionals</text>
+</svg>

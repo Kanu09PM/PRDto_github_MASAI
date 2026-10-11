@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"background":"#f9f9ff","tertiary-fixed-dim":"#b4c5ff","surface-container-low":"#f1f3ff","error-container":"#ffdad6","secondary-container":"#6cf8bb","on-tertiary":"#ffffff","on-secondary":"#ffffff","on-secondary-fixed":"#002113","on-background":"#141b2b","on-primary-fixed":"#00201c","surface-bright":"#f9f9ff","tertiary-container":"#003797","on-primary":"#ffffff","on-tertiary-fixed-variant":"#003ea8","surface-container-high":"#e1e8fd","on-error-container":"#93000a","tertiary":"#002368","error":"#ba1a1a","secondary":"#006c49","inverse-primary":"#9cd1c6","on-tertiary-container":"#8ba7ff","primary-container":"#0d473f","primary":"#002f29","surface-tint":"#33675e","surface-container-lowest":"#ffffff","primary-fixed":"#b7ede2","on-secondary-fixed-variant":"#005236","inverse-surface":"#293040","secondary-fixed":"#6ffbbe","outline-variant":"#bfc8c5","tertiary-fixed":"#dbe1ff","primary-fixed-dim":"#9cd1c6","outline":"#707976","on-secondary-container":"#00714d","on-surface-variant":"#404946","secondary-fixed-dim":"#4edea3","on-primary-fixed-variant":"#184f47","surface":"#f9f9ff","on-surface":"#141b2b","surface-container-highest":"#dce2f7","surface-variant":"#dce2f7","surface-dim":"#d3daef","on-error":"#ffffff","inverse-on-surface":"#edf0ff","on-primary-container":"#80b5aa","on-tertiary-fixed":"#00174b","surface-container":"#e9edff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","gutter":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","space-2xl":"3rem","space-md":"1rem","margin-desktop":"2rem","space-xs":"0.25rem","margin":"1rem","margin-tablet":"1.5rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"headline-sm":["Inter"],"metric-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"display-lg":["Inter"],"label-lg":["Inter"],"body-md":["Inter"],"display-lg-mobile":["Inter"],"headline-lg":["Inter"],"label-md":["Inter"],"metric-md":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"metric-lg":["28px",{"lineHeight":"32px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"display-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"metric-md":["20px",{"lineHeight":"24px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1280px] mx-auto px-margin-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-sm cursor-pointer"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">commute</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">Hopr</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container rounded-lg font-label-lg text-label-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container rounded-lg font-label-lg text-label-lg" data-path="ride-search" href="#">Ride Search</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="my-rides" href="#">My Rides</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="activity" href="#">Activity</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="corporate-commute" href="#">Corporate Commute</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low cursor-pointer"><span class="material-symbols-outlined text-secondary text-[16px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-medium">Bengaluru</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><button class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><span class="hidden lg:inline font-label-md text-label-md text-on-surface font-medium">Kavya</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Spatial Anchor & Live Transit Ribbon -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-desktop pt-space-xl pb-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-semibold">Bengaluru Tech Corridor Express</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight font-bold">Plan Verified Commute</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Quiet, synchronized rides for verified tech & enterprise professionals across the ORR & Intermediate Ring Road belt.</p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl shadow-sm">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-7 w-7 rounded-full ring-2 ring-surface object-cover" data-alt="Corporate professional woman headshot in modern office environment with subtle glasses and pleasant warm smile, soft teal lighting tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdLVz5v2qm1LX0USduFrjVWbQGv3OQRHcNrQZXV1_JnbZIjfgo-4rjFSoQDfmCSazzH22tt1ugVh8YBSkMIRrcITRikFQMTVSM6iomJ4f5pCTHYU7LJO0yyViNDZEZvozpwBScRtBFygjnE_0zYGQSozaifgbQDM-PVtB5kgb2LZdritRYHpBDHhXAeyu44vdiCEZfnU5rO95OduSf6BFuAMkrmIyGdMHJDlCD0AAgOBOBz68RRjsrxw"/>
+<img class="inline-block h-7 w-7 rounded-full ring-2 ring-surface object-cover" data-alt="Young south asian professional man wearing minimal navy smart casual attire, soft natural daylight background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7geF1pJMc-yGe394E0jLDLHeIqPeNDUvYbdf6S51Na-EDu_g5SQJsjbhbELiQ0SLIOwnDXegLCWrdNErVlebBzMAIPTZKCqVHr7aObeNYRtvs0tMULbMUix-4jtSX74RBP1R83fJWnWKKAaEXPNwYMBDCRTV4bYpRI3SS7X3PhiUz6mtVdCcPcMfM0bWXWyIy4VemUB7vnlf1SvSP-VSEx5CjjpKRfCwXosLo1K7XIqfDfU7QyqTJwA"/>
+<img class="inline-block h-7 w-7 rounded-full ring-2 ring-surface object-cover" data-alt="Senior tech lead with confident and calm expression, verified enterprise background with crisp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7x6aFsNc4vKXXg5jyB6wQKvhNHwGfiKV89UCaPVIN4j1RQLdvC0SRf3vltaPL7GdC3ckwtUftM89ZjWh59jzOtA0zBhrETvYDKV1OJTYcz4DpgmBAI4OTTlQkpU96kshBHgSj-sRPTMhkqtLB1iIq3laxIQNkoiK3IxSKhAEBB2whxspiab4uYrjlFyFhlicMN8VfOA-xRjnUYzphpGiB6_2-KXDdR5MJn5KjuBX-mk3rbwSerOzpog"/>
+</div>
+<div class="text-left pl-space-xs">
+<div class="font-label-md text-label-md text-primary font-bold">1,840+ Active Today</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Flipkart, Swiggy, Goldman Sachs & more</div>
+</div>
+</div>
+</div>
+<!-- Horizontal Planner Bar (Level 2 Elevation with Soft Ambient Depth) -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-xl p-space-md transition-all">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Origin -->
+<div class="lg:col-span-3 bg-surface-container-low/70 hover:bg-surface-container-low transition-colors rounded-xl p-space-sm relative group">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary inline-block"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium tracking-wide">Pickup Point</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">my_location</span>
+<input class="w-full bg-transparent font-label-lg text-label-lg text-on-surface font-semibold focus:outline-none truncate" type="text" value="Koramangala 4th block Sony World Signal"/>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors pl-1" title="Clear origin" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Destination -->
+<div class="lg:col-span-3 bg-surface-container-low/70 hover:bg-surface-container-low transition-colors rounded-xl p-space-sm relative group">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary inline-block"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium tracking-wide">Drop-off Destination</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">location_on</span>
+<input class="w-full bg-transparent font-label-lg text-label-lg text-on-surface font-semibold focus:outline-none truncate" type="text" value="Embassy GolfLinks Business Park (EGL)"/>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors pl-1" title="Clear destination" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Date & Schedule -->
+<div class="lg:col-span-2 bg-surface-container-low/70 hover:bg-surface-container-low transition-colors rounded-xl p-space-sm cursor-pointer">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">calendar_today</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium tracking-wide">Travel Date</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Today, 24 Oct</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span>
+</div>
+</div>
+<!-- Departure Time & Window -->
+<div class="lg:col-span-2 bg-surface-container-low/70 hover:bg-surface-container-low transition-colors rounded-xl p-space-sm cursor-pointer">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium tracking-wide">Target Window</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="truncate">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">08:30 AM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-1 font-normal">±15m</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">tune</span>
+</div>
+</div>
+<!-- Seats & Instant CTA -->
+<div class="lg:col-span-2 flex items-center gap-space-xs h-full">
+<div class="bg-surface-container-low/70 hover:bg-surface-container-low transition-colors rounded-xl p-space-sm cursor-pointer shrink-0 w-24">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">group</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium tracking-wide">Seats</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">1 Seat</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">unfold_more</span>
+</div>
+</div>
+<button class="w-full h-[52px] bg-primary hover:bg-primary-container text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" id="searchButton" type="button">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span class="whitespace-nowrap font-semibold">Search Rides</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Content Split Grid -->
+<section class="w-full max-w-[1280px] mx-auto px-margin-desktop py-space-md pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column (60% equivalent ~ 7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Active Corridor Overview Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-primary">Active Corridor Overview</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-secondary text-[16px]">navigation</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">via Intermediate Ring Road</span>
+</div>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface font-medium">
+            Sony World Signal <span class="text-on-surface-variant">→</span> Embassy GolfLinks (EGL)
+          </div>
+<!-- Route Visualizer Matrix -->
+<div class="bg-surface-container-low/60 rounded-xl p-space-md flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center font-metric-md text-metric-md">
+                5.2
+                <span class="font-label-sm text-label-sm ml-0.5">km</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">~20 mins</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Expected travel duration at 08:30 AM</div>
+</div>
+</div>
+<div class="flex items-center gap-space-lg self-end sm:self-center">
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Carpool Fare</div>
+<div class="font-metric-md text-metric-md text-secondary font-bold">₹110 - ₹145</div>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-medium">Solo Cab Est.</div>
+<div class="font-metric-md text-metric-md text-on-surface-variant line-through font-semibold">₹230</div>
+</div>
+</div>
+</div>
+<!-- Micro Route Milestones -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="flex flex-col gap-1 p-space-sm bg-surface-container-low/40 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 1: Boarding</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Sony World Signal</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">3 min walk</span>
+</div>
+<div class="flex flex-col gap-1 p-space-sm bg-surface-container-low/40 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 2: Expressway</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Intermediate Ring Rd</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4.1 km non-stop</span>
+</div>
+<div class="flex flex-col gap-1 p-space-sm bg-surface-container-low/40 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 3: Drop-Off</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">EGL Pebble Beach</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Main Gate Entry</span>
+</div>
+</div>
+</div>
+<!-- Peak Morning Commute Insight Banner -->
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-low to-surface-container rounded-2xl p-space-md flex items-start gap-space-md shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">eco</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-primary font-bold">Peak Morning Commute Alert</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">Live Traffic Flow Moderate</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">Intermediate Ring Rd flow is optimal for pooled departures before 08:45 AM. Sharing your morning commute saves approx <span class="font-semibold text-secondary">₹85</span> and reduces carbon footprint by <span class="font-semibold text-secondary">1.8 kg CO₂</span> compared to single-occupant cabs.</p>
+</div>
+</div>
+<!-- Quick Launch: Saved Commutes -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary">Saved Commutes</h2>
+<button class="font-label-md text-label-md text-secondary hover:text-on-secondary-container font-semibold transition-colors">Manage Locations</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<!-- Saved Card 1 -->
+<div class="bg-surface-container-lowest hover:bg-surface-container-low rounded-xl p-space-md shadow-sm cursor-pointer transition-all hover:-translate-y-0.5 group">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">corporate_fare</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold bg-secondary-fixed/50 px-2 py-0.5 rounded-full">Daily</span>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary">Office – EGL</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate mb-space-sm">Embassy GolfLinks Tech Park</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>08:30 AM • 5.2 km</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Saved Card 2 -->
+<div class="bg-surface-container-lowest hover:bg-surface-container-low rounded-xl p-space-md shadow-sm cursor-pointer transition-all hover:-translate-y-0.5 group">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Alternate</span>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary">Indiranagar Hub</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate mb-space-sm">100ft Road Metro & Cafes</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>09:15 AM • 4.8 km</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</div>
+</div>
+<!-- Saved Card 3 -->
+<div class="bg-surface-container-lowest hover:bg-surface-container-low rounded-xl p-space-md shadow-sm cursor-pointer transition-all hover:-translate-y-0.5 group">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">location_city</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Client site</span>
+</div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary">HSR Layout Sector 4</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate mb-space-sm">27th Main Co-working Belt</div>
+<div class="flex items-center justify-between pt-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>09:45 AM • 6.1 km</span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Route Statistics & Commute Velocity Graph -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Corridor Performance & Reliability</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Historical transit speed along Intermediate Ring Rd across 30-day window</p>
+</div>
+<div class="text-right">
+<div class="font-metric-md text-metric-md text-secondary">98.4%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">On-Time Arrival Rate</div>
+</div>
+</div>
+<!-- Inline SVG Reliability Sparkline / Speed Band -->
+<div class="w-full bg-surface-container-low/40 rounded-xl p-space-md">
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm mb-2">
+<span>07:30 AM (14m)</span>
+<span>08:00 AM (17m)</span>
+<span class="text-secondary font-bold">08:30 AM (20m target)</span>
+<span>09:00 AM (28m peak)</span>
+<span>09:30 AM (24m)</span>
+</div>
+<svg class="w-full h-16 text-secondary fill-none" preserveaspectratio="none" viewbox="0 0 540 70">
+<!-- Grid Guideline -->
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.1" x1="0" x2="540" y1="50" y2="50"></line>
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.1" x1="0" x2="540" y1="25" y2="25"></line>
+<!-- Smooth Trend -->
+<path d="M 0,55 Q 80,48 135,42 T 270,30 T 405,12 T 540,24" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<!-- Area fill gradient below curve -->
+<path d="M 0,55 Q 80,48 135,42 T 270,30 T 405,12 T 540,24 L 540,70 L 0,70 Z" fill="currentColor" fill-opacity="0.06"></path>
+<!-- Selected Target Marker (08:30 AM) -->
+<circle cx="270" cy="30" fill="#002f29" r="5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-2">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Smooth corridor clearance (avg 26 km/h)
+              </span>
+<span class="text-on-surface font-medium">Recommended departure window: 08:20 – 08:35 AM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (40% equivalent ~ 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Interactive Route Map Preview Panel -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden flex flex-col">
+<div class="p-space-md flex items-center justify-between bg-surface-container-lowest">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">alt_route</span>
+<div>
+<div class="font-label-lg text-label-lg text-primary font-bold">Live Route Telemetry</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Intermediate Ring Rd Corridor</div>
+</div>
+</div>
+<span class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+              Live GPS Sync
+            </span>
+</div>
+<!-- Simulated High-Precision Transit Map Element -->
+<div class="relative w-full h-[360px] bg-surface-container-high overflow-hidden" data-location="Koramangala to Embassy GolfLinks, Bengaluru" style="">
+<!-- Simulated Stylized Transit Overlay via Vectors -->
+<div class="absolute inset-0 bg-cover bg-center opacity-85" data-alt="Stylized modern architectural vector transit map of Bengaluru streets showing Intermediate Ring Road, Koramangala 4th Block, and Embassy GolfLinks, light neutral slate background with subtle sage green route highlight and tech map nodes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFgXVCXQrNPOnbCMg-aR-hEcPDSRwe-SnuPp9rkeloqmlJNB8j8CtHvHl_TBP4Bh6mHjE2h-80BHM7Ur78hHCy0arn4T0GLWEVR9kak4Om2PiIrYY0jNC4RSh42TwizVfiR7ZvgyuAv1aKZgIOFbrhiGAhZD0jHUs4bfbhVgs7rlgtyUKMcALVj6O3P4pAa_y8cbp5qmV8PmGQYc8oEmFSNEOuGYnKeKX7nTYdqv-mtu3-ryBvV2HELA')"></div>
+<!-- Map Top Overlay: Real-time Traffic Badge -->
+<div class="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-md flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Real-time Traffic: Mild Congestion on Inner Ring Rd</span>
+</div>
+<div class="bg-surface-container-lowest/95 backdrop-blur-md p-1.5 rounded-lg shadow-md flex flex-col gap-1 pointer-events-auto">
+<button class="w-7 h-7 flex items-center justify-center hover:bg-surface-container-low rounded text-on-surface" title="Zoom in">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<button class="w-7 h-7 flex items-center justify-center hover:bg-surface-container-low rounded text-on-surface" title="Zoom out">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+</div>
+</div>
+<!-- Route Nodes Floating Card on Map Canvas -->
+<div class="absolute bottom-3 left-3 right-3 bg-surface-container-lowest/95 backdrop-blur-md p-space-sm rounded-xl shadow-lg">
+<div class="flex items-center justify-between text-on-surface text-label-sm font-label-sm mb-1">
+<div class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">trip_origin</span>
+<span>Sony World, Koramangala</span>
+</div>
+<span class="text-on-surface-variant">••• 5.2 km •••</span>
+<div class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<span>EGL Tech Park</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%"></div>
+</div>
+<div class="flex justify-between items-center mt-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span>Domlur Flyover: 35 km/h</span>
+<span class="text-secondary font-semibold">ETA: 08:52 AM</span>
+</div>
+</div>
+</div>
+<!-- Map Footnote Actions -->
+<div class="p-space-md bg-surface-container-low/40 flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Geo-fenced corporate pickup hubs</span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline font-semibold flex items-center gap-0.5">
+<span>View corridor stops</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Corporate Verification & Safety Highlight Card -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">100% Verified Community</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Zero Anonymous Riders</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Every co-commuter on this route is authenticated via government ID and active official corporate email domain.</p>
+<!-- Verified Partner Corporate Network Pills -->
+<div class="flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Frequent Corridor Employers</div>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-space-sm py-1 bg-surface-container-low text-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Flipkart
+              </span>
+<span class="px-space-sm py-1 bg-surface-container-low text-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Swiggy
+              </span>
+<span class="px-space-sm py-1 bg-surface-container-low text-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Goldman Sachs
+              </span>
+<span class="px-space-sm py-1 bg-surface-container-low text-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Bain & Co
+              </span>
+<span class="px-space-sm py-1 bg-surface-container-low text-primary rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Target Tech
+              </span>
+</div>
+</div>
+<!-- Trust Badges List -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low/60 rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<div>
+<div class="font-label-sm text-label-sm text-primary font-bold">Aadhaar & Domain</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dual-level verified</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-sm bg-surface-container-low/60 rounded-xl">
+<span class="material-symbols-outlined text-secondary text-[20px]">emergency</span>
+<div>
+<div class="font-label-sm text-label-sm text-primary font-bold">24/7 Rapid SOS</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Live telemetry guard</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Preferences Drawer Trigger -->
+<div class="p-space-md rounded-2xl bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<div>
+<div class="font-label-md text-label-md text-primary font-semibold">Commute Preferences</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Silent ride, women-only carpools, EV only</div>
+</div>
+</div>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest hover:bg-surface text-primary rounded-lg font-label-sm text-label-sm font-semibold shadow-sm transition-colors">
+            Configure
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive State Handler -->
+<script>
+    (function() {
+      const searchBtn = document.getElementById('searchButton');
+      if (searchBtn) {
+        searchBtn.addEventListener('click', function() {
+          const originalContent = this.innerHTML;
+          this.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span class="font-semibold">Matching...</span>';
+          this.classList.add('opacity-90');
+          setTimeout(() => {
+            this.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span><span class="font-semibold">14 Rides Found</span>';
+            this.classList.remove('opacity-90');
+            setTimeout(() => {
+              this.innerHTML = originalContent;
+            }, 2500);
+          }, 900);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="max-w-[1280px] mx-auto px-margin-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-6 h-6 rounded-md bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-secondary-fixed text-[14px]">commute</span></div><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">Hopr</span><span class="font-body-sm text-body-sm text-on-surface-variant ml-space-xs">© 2025 Hopr Mobility Technologies. Bengaluru Urban Transit.</span></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Verified Network</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Commute Safety</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a></div></div></footer></body></html>
