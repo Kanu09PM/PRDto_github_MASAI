@@ -44,6 +44,57 @@ Then visit:
 http://localhost:8000
 ```
 
+## Product screenshots and walkthrough
+These visuals capture the core user journey and product flow behind the HOPR concept.
+
+### 1. Shared ride app showcase
+
+<p align="center">
+  <img src="snapshots_project/Hopr Shared Ride App Showcase.png" alt="HOPR shared ride app showcase" width="100%" />
+</p>
+
+### 2. Smart guest matching strategy slide
+
+<p align="center">
+  <img src="snapshots_project/Hopr Smart Guest Matching Strategy Slide.png" alt="HOPR smart guest matching strategy slide" width="100%" />
+</p>
+
+### 3. Guest matching app flow
+
+<p align="center">
+  <img src="snapshots_project/Hopr Smart Guest Matching App Flow.png" alt="HOPR guest matching app flow" width="100%" />
+</p>
+
+### 4. Strategy board
+
+<p align="center">
+  <img src="snapshots_project/Hopr Smart Guest Matching Strategy Board.png" alt="HOPR strategy board" width="100%" />
+</p>
+
+### 5. Prototype screen: ride search
+
+<p align="center">
+  <img src="prototype_screens/website_screens/stitch_hopr_shared_commute_experience/hopr_web_ride_search/screen.png" alt="Website ride search prototype" width="100%" />
+</p>
+
+### 6. Prototype screen: guest matches
+
+<p align="center">
+  <img src="prototype_screens/mobile_screen_hopr_sunday/stitch_hopr_shared_commute_experience/hopr_guest_matches/screen.png" alt="Mobile guest matches prototype" width="100%" />
+</p>
+
+### 7. Prototype screen: no host found
+
+<p align="center">
+  <img src="prototype_screens/mobile_screen_hopr_sunday/stitch_hopr_shared_commute_experience/hopr_no_host_found/screen.png" alt="No host found prototype" width="100%" />
+</p>
+
+### 8. Prototype screen: rapid handoff
+
+<p align="center">
+  <img src="prototype_screens/website_screens/stitch_hopr_shared_commute_experience/hopr_web_rapido_handoff/screen.png" alt="Rapid handoff prototype" width="100%" />
+</p>
+
 ## Project structure
 
 ```text
